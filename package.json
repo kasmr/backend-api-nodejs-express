@@ -5,12 +5,18 @@
   "main": "sever.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm instal --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "bcryptjs": "^2.4.3",
     "config": "^3.2.4",
     "express": "^4.17.1",
