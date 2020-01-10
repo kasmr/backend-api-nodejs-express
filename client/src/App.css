@@ -321,6 +321,10 @@ textarea {
   border: 1px solid #ccc;
 }
 
+textarea {
+  font: inherit;
+}
+
 input[type='submit'],
 button {
   font: inherit;

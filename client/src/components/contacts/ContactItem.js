@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ContactItem = ({ contact }) => {
-  const { id, name, email, phone, type } = contact;
+  const { id, name, email, phone, type, info } = contact;
 
   return (
     <div className='card bg-light'>
@@ -30,6 +30,12 @@ const ContactItem = ({ contact }) => {
           <li>
             <i className='fas fa-phone' />
             {phone}
+          </li>
+        )}
+        {info && (
+          <li>
+            <i className='fas fa-info-circle' />
+            {info}
           </li>
         )}
       </ul>
