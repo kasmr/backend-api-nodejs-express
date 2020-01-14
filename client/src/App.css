@@ -41,7 +41,7 @@ img {
 }
 
 i {
-  margin: 0.5rem;
+  margin: 0.2rem;
 }
 
 /* Utilities */
@@ -376,6 +376,7 @@ table th {
 
 .navbar ul {
   display: flex;
+  align-items: center;
 }
 
 .navbar a {

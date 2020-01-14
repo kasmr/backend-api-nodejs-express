@@ -75,6 +75,7 @@ const ContactForm = () => {
       />
       <h5>Additional information</h5>
       <textarea
+        style={{ resize: 'none' }}
         name='info'
         value={info}
         cols='30'
